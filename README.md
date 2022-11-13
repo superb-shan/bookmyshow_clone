@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# Shan's Book My Show
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Full Stack Project Built with MERN Stack.
 
-## Available Scripts
+- This website features the main functionalities of the Real `BookMyShow`
+- Like the landing Page, Movies Page, Plays Page
+- It is also built with a test Payment Gateway System from **RazorPay**
+- If you want to use this project you have to have 2 keys
+  1. TMDB key
+  2. RazorPay key
+- Then you can use this project as you want.
 
-In the project directory, you can run:
+Happy Developing! 🧑‍🎤✨
 
-### `npm start`
+### Built with
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Tailwind CSS
+- Axios
+- Headless UI
+- React Slick
+- React Icons
+- RazorPay API
+- TMDB API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Terminal Commands
 
-### `npm test`
+To use this project you should have used or installed the below shown Packages:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npx create-react-app .
+npm install react-router-dom
+npm install react-slick
+npm install slick-carousel
+npm install axios
+npm install -D tailwindcss
+npx tailwindcss init
+npm install @headlessui/react
+```
 
-### `npm run build`
+Go through the official websites to see detailed installation procedures.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Major Routes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Home Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```http
+   /
+```
 
-### `npm run eject`
+| Route | Description               |
+| :---- | :------------------------ |
+| `/`   | **Takes to the HomePage** |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Movie Info
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```http
+   /movie/:id
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Parameter | Type     | Description                        |
+| :-------- | :------- | :--------------------------------- |
+| `id`      | `string` | **Required**. Id of movie to fetch |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Plays/ Events
 
-## Learn More
+```http
+   /plays
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Route    | Description                |
+| :------- | :------------------------- |
+| `/plays` | **Takes to the PlaysPage** |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Color Reference
 
-### Code Splitting
+Extra Colors used inspite of the colors present in Tailwind CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Dark BackGround
 
-### Analyzing the Bundle Size
+| Color | Hex     |
+| ----- | ------- |
+| 50    | #edf1fc |
+| 100   | #d3d4e1 |
+| 200   | #b6b8c9 |
+| 300   | #989bb2 |
+| 400   | #7c7f9b |
+| 500   | #636582 |
+| 600   | #4c4f66 |
+| 700   | #363849 |
+| 800   | #21222e |
+| 900   | #0a0a16 |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Premier
 
-### Making a Progressive Web App
+| Color | Hex     |
+| ----- | ------- |
+| 50    | #edf4fd |
+| 100   | #ced7e5 |
+| 200   | #afbbcf |
+| 300   | #909fbb |
+| 400   | #7081a7 |
+| 500   | #57668e |
+| 600   | #444d6f |
+| 700   | #303650 |
+| 800   | #2b3147 |
+| 900   | #080d17 |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Environment Variables
 
-### Advanced Configuration
+To run this project, you will need to add the following environment variables to your .env file
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+`REACT_APP_API_KEY`
 
-### Deployment
+You can get your own key from https://www.themoviedb.org/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Deployment
 
-### `npm run build` fails to minify
+To start this project run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+  npm start
+```
