@@ -16,24 +16,25 @@ const PlayPage = () => {
               <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
                 <Poster
                   isPlay={true}
-                  src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-so-rude-of-me-by-swati-sachdeva-0-2022-9-4-t-6-10-37.jpg"
-                  title="So Rude of Me by Swati Sachdeva"
+                  src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxOSBOb3Y%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00343209-pkcawqgduu-portrait.jpg"
+                  title="NTLive Broadcast of The Seagull"
                   subtitle="Comedy Shows | Hindi, English | 16yrs + | 1hr 30mins"
                 />
               </div>
               <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
                 <Poster
                   isPlay={true}
-                  src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-suhani-shah-kahaani-india-tour-0-2022-8-29-t-12-36-14.jpg"
-                  title="So Rude of Me by Swati Sachdeva"
+                  src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyMCBOb3Y%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00342585-ngtjzqceht-portrait.jpg"
+                  title="A Dramatique Evening by Sanjay Goshal"
                   subtitle="Comedy Shows | Hindi, English | 16yrs + | 1hr 30mins"
                 />
               </div>
               <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
                 <Poster
                   isPlay={true}
-                  src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-daddy-kool-by-atul-khatri-0-2022-8-16-t-10-37-17.jpg"
-                  title="So Rude of Me by Swati Sachdeva"
+                  src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VGh1LCAxNyBOb3Ygb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00343397-hfqgmhdcre-portrait.jpg"
+                  title="WEEK 3 Short+Sweet South India Theatre Festival
+                  "
                   subtitle="Comedy Shows | Hindi, English | 16yrs + | 1hr 30mins"
                 />
               </div>
@@ -56,8 +57,8 @@ const PlayPage = () => {
               <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
                 <Poster
                   isPlay={true}
-                  src="https://assets-in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-so-rude-of-me-by-swati-sachdeva-0-2022-9-4-t-6-10-37.jpg"
-                  title="So Rude of Me by Swati Sachdeva"
+                  src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxOSBOb3Ygb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00342398-qpnrcxuqsd-portrait.jpg"
+                  title="Peppa Pig Live! - Bengaluru"
                   subtitle="Comedy Shows | Hindi, English | 16yrs + | 1hr 30mins"
                 />
               </div>
@@ -76,6 +77,24 @@ const PlayPage = () => {
               <PlayFilter
                 title="Language"
                 tags={["English", "Hindi", "Tamil"]}
+              />
+            </div>
+            <div>
+              <PlayFilter
+                title="Mode"
+                tags={["Online", "Offline"]}
+              />
+            </div>
+            <div>
+              <PlayFilter
+                title="Target Audience"
+                tags={["Kids", "Adults", "Senior Citizen"]}
+              />
+            </div>
+            <div>
+              <PlayFilter
+                title="Censorship"
+                tags={["U", "U/A", "A"]}
               />
             </div>
           </div>
