@@ -10,7 +10,7 @@ const PosterSlider = (props) => {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 4,
-    initialSlide: 3,
+    initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
